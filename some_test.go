@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestSomething(t *testing.T) {
+func TestLintShouldFailButDoesnt(t *testing.T) {
 	tests := map[string]struct {
 		fooValue string
 	}{
@@ -17,5 +17,7 @@ func TestSomething(t *testing.T) {
 			os.Setenv("foo", tc.fooValue)
 		})
 	}
-
+}
+func TestLintFails(t *testing.T) {
+	os.Setenv("foo", "bar")
 }
