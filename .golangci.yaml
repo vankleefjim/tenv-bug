@@ -1,0 +1,7 @@
+linters:
+  disable-all: true
+  enable:
+    - tenv
+linter-settings:
+  tenv:
+    all: true
